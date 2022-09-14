@@ -1,0 +1,202 @@
+section.benefits {
+  .head-benefits {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background: #DD141D;
+    padding: 10px;
+
+    h6 {
+      font: normal normal normal 18px/24px Roboto;
+      letter-spacing: 0px;
+      color: #FFFFFF;
+      margin: 0;
+    }
+
+    button {
+      background: transparent;
+      border: none;
+      box-shadow: none;
+    }
+  }
+
+  .content-benefits {
+    background: #EDEDED;
+    height: calc(100vh - 48px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .content {
+      position: relative;
+
+      .image {
+        position: absolute;
+        bottom: 0;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .items-benefits {
+        background: white;
+        padding: 15px;
+        border-radius: 11px;
+        position: absolute;
+        top: -100px;
+        z-index: 10;
+
+        .title {
+          text-align: center;
+
+          h6 {
+            font: normal normal bold 18px/24px Roboto;
+            letter-spacing: 0px;
+            color: #000000;
+          }
+        }
+
+        .items {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          .item {
+            display: flex;
+            align-items: center;
+            padding: 8px;
+            border-bottom: 1px solid #707070;
+
+            .image-item {
+              margin-right: 8px;
+
+              img {
+                width: 24px;
+                height: 24px
+              }
+            }
+
+            .check {
+              margin-right: 10px;
+            }
+
+            .paragraph {
+              p {
+                margin: 0;
+                font: normal normal normal 12px/18px Roboto;
+                letter-spacing: 0px;
+                color: #000000;
+
+                a {
+                  text-decoration: underline;
+                  font: normal normal bold 12px/16px Roboto;
+                  letter-spacing: 0px;
+                  color: black;
+                }
+              }
+            }
+
+            &:nth-child(4n), &:nth-child(5n) {
+              border-bottom: none;
+            }
+
+            .css-checkbox {
+              position: absolute;
+              overflow: hidden;
+              clip: rect(0 0 0 0);
+              height: 1px;
+              width: 1px;
+              margin: -1px;
+              padding: 0;
+              border: 0;
+            }
+
+            #inputPreview {
+              display: flex;
+              gap: 20px;
+              justify-content: center;
+
+              .css-checkbox + label {
+                font: normal normal normal 12px/16px Roboto;
+                letter-spacing: 0px;
+                color: #000000;
+                position: relative;
+                cursor: pointer;
+                display: inline-flex;
+                align-items: center;
+                height: 36px;
+                text-align: left;
+
+                a{
+                  text-decoration: underline;
+                  font: normal normal bold 12px/16px Roboto;
+                  letter-spacing: 0px;
+                  color: #000000;
+                }
+
+                &::before {
+                  content: " ";
+                  display: inline-block;
+                  vertical-align: middle;
+                  margin-right: 10px;
+                  width: 45px;
+                  height: 30px;
+                  background-color: white;
+                  border-width: 1px;
+                  border-style: solid;
+                  border-color: #55AB37;
+                  border-radius: 8px;
+                  box-shadow: none;
+                }
+
+              }
+
+              .css-checkbox:checked + label::after {
+                content: " ";
+                background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/b0/Light_green_check.svg");
+                background-repeat: no-repeat;
+                background-size: 20px 20px;
+                background-position: center center;
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: 0px;
+                left: 0px;
+                top: 2px;
+                text-align: center;
+                background-color: transparent;
+                font-size: 10px;
+                height: 30px;
+                width: 30px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    button{
+      position: absolute;
+      bottom: 11%;
+      z-index: 11;
+      text-align: center;
+      font: normal normal normal 16px/11px Roboto;
+      letter-spacing: 0px;
+      color: #FFFFFF;
+      background: #DD141D;
+      border: none;
+      border-radius: 25px;
+      padding: 12px 25px;
+      cursor: pointer;
+
+      &:disabled{
+        background: #575757 0% 0% no-repeat padding-box;
+      }
+    }
+  }
+}

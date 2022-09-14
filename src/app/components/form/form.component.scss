@@ -1,0 +1,139 @@
+section{
+  height: 100vh;
+  .head-form{
+    background: #DD141D;
+    color: white;
+    padding: .8rem;
+
+    .content-head{
+      display: flex;
+      justify-content: center;
+
+      h4{
+        font-weight: 300;
+      }
+    }
+  }
+
+  .container-form{
+    background: black;
+    display: flex;
+    height: calc(100% - 62.39px);
+    justify-content: center;
+    align-items: center;
+
+    .form{
+      width: 90%;
+      height: 80%;
+      padding: 15px;
+      background: white;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      form{
+        .title-form{
+          text-align: left;
+          font: normal normal bold 18px/22px Roboto;
+          font-size: 18px;
+        }
+        .input-container{
+          width: 100%;
+
+
+          select{
+            position: relative;
+            color:#BCBCBC!important;
+            &:after{
+              content: '';
+              background-image: url(/assets/img/icon-select.svg);
+              background-repeat: no-repeat;
+              position: absolute;
+              right: 0;
+            }
+          }
+
+          input, select{
+            background: transparent;
+            border: none;
+            box-shadow: none;
+            border-bottom: 1px solid #BCBCBC;
+            width: 100%;
+            color: black;
+            font: normal normal bold 16px/24px Roboto;
+
+            &::placeholder{
+              color: #BCBCBC;
+              font-size: 16px;
+              font: normal normal normal 16px/24px Roboto;
+            }
+
+            option[disabled] {
+              color: #BCBCBC!important;
+              text-shadow: none;
+              border: none;
+            }
+
+            &:focus-visible{
+              outline: transparent;
+              border-bottom: 1px solid #DD141D;
+            }
+          }
+
+          .inputs{
+            display: flex;
+            color: #BCBCBC;
+
+            select{
+              width: 48%;
+              margin-right: 4px;
+            }
+
+            input{
+              width: 16.6%;
+              text-align: center;
+              color: #000000;
+            }
+          }
+
+          &.filter-city{
+            position: relative;
+
+            .option-city{
+              position: absolute;
+              top: 55px;
+              background: #EDEDED;
+              width: 100%;
+              padding: 6px;
+              z-index: 5;
+
+              option{
+                border-bottom: 1px solid #BCBCBC;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    button{
+      position: absolute;
+      bottom: 7.5%;
+      border: none;
+      box-shadow: none;
+      color: white;
+      width: 136px;
+      height: 40px;
+      border-radius: 25px;
+      /* UI Properties */
+      background: #DD141D 0% 0% no-repeat padding-box;
+      opacity: 1;
+
+      &:disabled{
+        background: #575757 0% 0% no-repeat padding-box;
+      }
+    }
+  }
+}

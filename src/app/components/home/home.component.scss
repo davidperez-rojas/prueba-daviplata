@@ -1,0 +1,248 @@
+section.home{
+  .head-home{
+    background: #DD141D;
+    text-align: center;
+    position: relative;
+    padding: 10px;
+
+    img{
+      width: 150px;
+    }
+    button{
+      position: absolute;
+      right: 1%;
+      border: none;
+      box-shadow: none;
+      background: transparent;
+
+      img{
+        width: auto;
+      }
+    }
+  }
+  .container{
+    background: #EBECF0;
+    .content-home{
+      .head-content{
+        padding: 8px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .info-principal{
+        .solutions{
+          position: absolute;
+          left: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          top: 14%;
+
+          .image{
+            padding: 2px 6px;
+            background: #DD141D;
+            border-radius: 0 14px 14px 0;
+            margin-right: 4px;
+          }
+
+          p{
+            margin: 0;
+            font-size: 10px;
+          }
+        }
+
+        .tops{
+          position: absolute;
+          right: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          top: 14%;
+
+          .image{
+            padding: 2px 8px;
+            background: #383838;
+            border-radius: 14px 0 0 14px;
+            margin-left: 4px;
+          }
+
+          p{
+            margin: 0;
+            font-size: 10px;
+          }
+        }
+        .info-daviplata{
+          margin-bottom: 2rem;
+          position: relative;
+          .circle{
+            background: white;
+            width: 170px;
+            height: 170px;
+            margin: 0 auto;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .cirlc-text{
+              text-align: center;
+            }
+          }
+          .move-money{
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom: -32px;
+
+            .spend-money, .take-money{
+              margin: 0 2.5px;
+              display: flex;
+              align-items: center;
+              padding: 2px 6px;
+              border-radius: 0 0 8px 8px;
+
+              img{
+                width: 110px;
+              }
+            }
+          }
+        }
+      }
+
+      .nana-store{
+        text-align: center;
+        margin-bottom: 1.5rem;
+        .vender{
+          text-align: left;
+          background: #E2E4EA;
+          padding: 12px;
+          border-radius: 14px;
+
+          .nano-text{
+            p{
+              color: #383838;
+              margin: 0;
+              font: normal normal bold 18px/24px Roboto;
+            }
+            span{
+              text-align: left;
+              font: normal normal normal 14px/20px Roboto;
+              letter-spacing: 0px;
+              color: #575757;
+              opacity: 1;
+            }
+          }
+
+          .nano-subox{
+            margin-top: 10px;
+            .container{
+              background: #E2E4EA;
+              .content-col{
+                text-align: center;
+                background: #DBDCE5;
+                border-radius: 12px;
+                height: 80px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                p{
+                  font: normal normal bold 14px/20px Roboto;
+                  color: #575757;
+                  margin: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .beneficios{
+        text-align: left;
+        background: #E2E4EA;
+        padding: 12px;
+        border-radius: 14px;
+        margin-bottom: 1rem;
+
+        a{
+          display: flex;
+          align-items: center;
+          .image{
+            margin-right: 6px;
+          }
+
+          .text{
+            p{
+              font: normal normal bold 18px/20px Roboto;
+              letter-spacing: 0px;
+              color: #575757;
+              margin: 0;
+            }
+
+            span{
+              font: normal normal normal 13px/20px Roboto;
+              letter-spacing: 0px;
+              color: #575757;
+            }
+          }
+        }
+      }
+
+      .carousel{
+        padding-bottom: 1rem;
+        .texts{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 10px;
+
+          p{
+            margin: 0;
+            font: normal normal bold 18px/24px Roboto;
+            letter-spacing: 0px;
+            color: #383838;
+          }
+
+          .new-catalogo{
+            img{
+              margin-right: 4px;
+            }
+            span{
+              text-align: center;
+              font: normal normal normal 14px/19px Roboto;
+              letter-spacing: 0px;
+              color: #000000;
+            }
+          }
+        }
+        .content-carousel{
+          swiper{
+            .content-swiper{
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+
+              .img{
+                img{
+                  border-radius: 8px;
+                }
+              }
+              .text{
+                span{
+                  font: normal normal normal 12px/15px Roboto;
+                  letter-spacing: 0px;
+                  color: #000000;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

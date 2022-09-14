@@ -1,0 +1,155 @@
+<section class="home">
+  <div class="head-home">
+    <img src="../../../assets/img/logo-header-m.png" alt="">
+    <button (click)="exit()">
+      <img src="../../../assets/img/icon-close.svg" alt="">
+    </button>
+  </div>
+  <div class="container">
+    <div class="content-home">
+      <div class="head-content">
+        <img src="../../../assets/img/hamburger-menu.svg" alt="menu">
+        <img src="../../../assets/img/notification.svg" alt="notification">
+      </div>
+      <div class="info-principal">
+        <div class="solutions">
+          <div class="image">
+            <img src="../../../assets/img/soluciones.svg" alt="">
+
+          </div>
+          <p>Soluciones<br>Mi negocio</p>
+        </div>
+        <div class="info-daviplata">
+          <div class="circle">
+            <div class="cirlc-text">
+              <strong>
+                Mi Daviplata
+                <p>$8'000.000,00</p>
+              </strong>
+              <span>Disponible</span>
+            </div>
+          </div>
+          <div class="move-money">
+            <div class="spend-money">
+              <img src="../../../assets/img/pasar.png" alt="">
+            </div>
+            <div class="take-money">
+              <img src="../../../assets/img/sacar.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="tops">
+          <p>Topes</p>
+          <div class="image">
+            <img src="../../../assets/img/topes.svg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="nana-store">
+        <h4>NanaStore</h4>
+        <div class="vender">
+          <div class="nano-text">
+            <p>Vender</p>
+            <span>Elija una opción para recibir el pago de su venta.</span>
+          </div>
+          <div class="nano-subox">
+            <div class="container">
+              <div class="row">
+                <div class="col-6">
+                  <div class="content-col">
+                    <img src="../../../assets/img/QR.svg" alt="">
+                    <p>Código QR</p>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="content-col">
+                    <img src="../../../assets/img/pse.svg" alt="">
+                    <p>Enlace de pago</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="beneficios">
+        <a routerLink="/beneficios">
+          <div class="image">
+            <img src="../../../assets/img/diamante.svg" alt="">
+          </div>
+          <div class="text">
+            <p>Más ingresos para su negocio</p>
+            <span>Conozca los beneficios.</span>
+          </div>
+        </a>
+      </div>
+      <div class="carousel">
+        <div class="texts">
+          <p>Catálogos</p>
+          <div class="new-catalogo">
+            <img src="../../../assets/img/more.svg" alt="">
+            <span>Nuevo catálogo</span>
+          </div>
+        </div>
+        <div class="content-carousel">
+          <swiper [slidesPerView]="3"
+                  [spaceBetween]="30"
+                  [freeMode]="true"
+                  [pagination]="{clickable: true}"
+          >
+            <ng-template swiperSlide>
+              <div class="content-swiper">
+                <div class="img">
+                  <img src="../../../assets/img/img-1.png">
+                </div>
+                <div class="text">
+                  <span>Avon</span>
+                </div>
+              </div>
+            </ng-template>
+            <ng-template swiperSlide>
+              <div class="content-swiper">
+                <div class="img">
+                  <img src="../../../assets/img/img-2.png">
+                </div>
+                <div class="text">
+                  <span>Natura</span>
+                </div>
+              </div>
+            </ng-template>
+            <ng-template swiperSlide>
+              <div class="content-swiper">
+                <div class="img">
+                  <img src="../../../assets/img/img-3.png">
+                </div>
+                <div class="text">
+                  <span>Aquarella</span>
+                </div>
+              </div>
+            </ng-template>
+            <ng-template swiperSlide>
+              <div class="content-swiper">
+                <div class="img">
+                  <img src="../../../assets/img/img-4.png">
+                </div>
+                <div class="text">
+                  <span>Pacífica</span>
+                </div>
+              </div>
+            </ng-template>
+            <ng-template swiperSlide>
+              <div class="content-swiper">
+                <div class="img">
+                  <img src="../../../assets/img/img-1.png">
+                </div>
+                <div class="text">
+                  <span>Avon</span>
+                </div>
+              </div>
+            </ng-template>
+          </swiper>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

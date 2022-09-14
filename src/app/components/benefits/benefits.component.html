@@ -1,0 +1,77 @@
+<section class="benefits">
+  <div class="head-benefits">
+    <button>
+      <img src="../../../assets/img/icon-close.svg" alt="">
+    </button>
+    <h6>Más ingresos para su negocio</h6>
+    <button>
+      <img src="../../../assets/img/icon-close.svg" alt="">
+    </button>
+  </div>
+  <div class="content-benefits">
+    <div class="container">
+      <div class="content">
+        <div class="items-benefits">
+          <div class="title">
+            <h6>Beneficios y características</h6>
+          </div>
+
+          <div class="items">
+
+            <div class="item">
+              <div class="image-item">
+                <img src="../../../assets/img/benefit-1.svg" alt="">
+              </div>
+              <div class="paragraph">
+                <p>Genere ingresos realizando compras en la tienda virtual y reciba entre el 2% y el 4% en devolución de la compra.</p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="image-item">
+                <img src="../../../assets/img/benefit-2.png" alt="">
+              </div>
+              <div class="paragraph">
+                <p>Aprenda cómo posicionar su negocio en nuestra escuela.</p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="image-item">
+                <img src="../../../assets/img/benefit-3.png" alt="">
+              </div>
+              <div class="paragraph">
+                <p>Acceda a informes detallados de su botón de pagos.</p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="image-item">
+                <img src="../../../assets/img/benefit-4.png" alt="">
+              </div>
+              <div class="paragraph">
+                <p>Obtenga estos beneficios de manera gratis y sin algún costo.</p>
+              </div>
+            </div>
+
+            <div class="item">
+              <form action="" [formGroup]="formContratar">
+                <div id="inputPreview">
+                  <input name="cssCheckbox" id="demo_opt_1" type="checkbox" class="css-checkbox" formControlName="check">
+                  <label for="demo_opt_1"> <span>Autorizo el descuento por suscripción aceptando los <a href="">Términos y Condiciones.</a></span></label>
+                </div>
+              </form>
+            </div>
+
+          </div>
+        </div>
+        <div class="image">
+          <img src="../../../assets/img/image-benefit.png" alt="">
+        </div>
+      </div>
+    </div>
+    <button type="submit" [disabled]="formContratar.invalid" (click)="click()">
+      Contratar
+    </button>
+  </div>
+</section>

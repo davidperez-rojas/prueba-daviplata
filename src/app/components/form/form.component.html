@@ -1,0 +1,132 @@
+<section class="form">
+  <div class="head-form">
+    <div class="content-head">
+      <div class="title">
+        <h4>Prueba ANGULAR</h4>
+      </div>
+    </div>
+  </div>
+  <div class="container-form">
+    <div class="form">
+      <form [formGroup]="formData" (ngSubmit)="sendData(formData)">
+        <div class="row">
+
+          <div class="col-12">
+            <p class="title-form">
+              Ingrese los siguientes datos
+            </p>
+          </div>
+
+          <div class="col-12">
+            <div class="input-container">
+              <label>
+                Escriba su nombre completo
+                <input type="text" placeholder="Ingrese el nombre" formControlName="name">
+              </label>
+            </div>
+          </div>
+
+          <div class="col-12">
+
+            <div class="input-container">
+              <label>
+                Seleccione tipo de documento
+                <select id="type-document">
+                  <option selected disabled>Seleccione</option>
+                  <option>Cédula de ciudadanía</option>
+                  <option>Tarjeta de identidad</option>
+                  <option>Cédula de extranjería</option>
+                </select>
+              </label>
+            </div>
+
+          </div>
+
+          <div class="col-12">
+
+            <div class="input-container">
+              <label>
+                Escriba número de documento
+                <input type="number" placeholder="Ingrese el número" formControlName="numberDocument">
+              </label>
+            </div>
+
+          </div>
+
+          <div class="col-12">
+
+            <!--Input buscador-->
+            <div class="input-container filter-city">
+              <label>
+                Escriba ciudad o municipio
+                <input type="text" placeholder="Ingrese el nombre" formControlName="city" id="city" #cit>
+                <ng-container *ngIf="showOption">
+                  <div class="option-city">
+                    <ng-container *ngFor="let city of listCity">
+                      <option (click)="clickCity(cit, city)">{{city}}</option>
+                    </ng-container>
+                  </div>
+                </ng-container>
+              </label>
+            </div>
+
+          </div>
+
+          <div class="col-12">
+
+            <div class="input-container">
+              <label>
+                Seleccione su dirección
+                <div class="inputs">
+                  <select>
+                    <option disabled selected [value]="0">Seleccione</option>
+                    <option [value]="'Autopista'">Autopista</option>
+                    <option [value]="'Avenida'">Avenida</option>
+                    <option [value]="'Avenida Calle'">Avenida Calle</option>
+                    <option [value]="'Av. carretera'">Av. carretera</option>
+                    <option [value]="'Calle'">Calle</option>
+                  </select>
+                  <input type="text"> # <input type="text"> - <input type="text">
+                </div>
+              </label>
+            </div>
+
+          </div>
+
+          <div class="col-12">
+
+            <div class="input-container">
+              <label>
+                Local / Tienda / Barrio / Otro
+                <input type="text" placeholder="Opcional" formControlName="moreIndications">
+              </label>
+            </div>
+
+          </div>
+
+          <div class="col-12">
+
+            <div class="input-container">
+              <label>
+                Número de celular
+                <input type="text" placeholder="Escriba el número" formControlName="phone" [pattern]="mobNumberPattern">
+              </label>
+              <ng-container
+                   *ngIf="formData.get('phone')?.invalid && (formData.get('phone')?.dirty
+               || formData.get('phone')?.touched)"
+              >
+                <small class="alert-danger" *ngIf="mobNumberPattern">El contacto debe iniciar con el número 3 y contener 10 números</small>
+              </ng-container>
+            </div>
+
+          </div>
+
+        </div>
+
+      </form>
+    </div>
+    <button type="submit" (click)="sendData(formData)" [disabled]="formData.invalid">
+      Crear
+    </button>
+  </div>
+</section>
